@@ -1,27 +1,31 @@
-# CandyObservables
+# Angular Observables Exercise & Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+## To Download Code
 
-## Development server
+- Click on the green "code" button.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Click "Download ZIP".
 
-## Code scaffolding
+- Extract Files.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Open in VSCode.
 
-## Build
+- Run `npm install`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## Exercise
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- [Github Repo Starting Code](https://github.com/WilderDev/Candy-Observables-Project/tree/Starter-Code)
 
-## Running end-to-end tests
+1. Create a new Subject in the PillowCaseService that emits when the myCandies array updates.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Subscribe to that change and update the local myCandies array.
 
-## Further help
+3. Create a variable of type "Subscription", store the observable under inside, and use `ngOnDestroy` to unsubscribe when the component is destoyed.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Create a new Subject in the CandyStoreService that emits when the candiesForSale array updates.
+
+5. Subscribe to that change and update the local candiesForSale array.
+
+6. Create a variable of type "Subscription", store the observable under inside, and use `ngOnDestroy` to unsubscribe when the component is destoyed.
